@@ -79,7 +79,7 @@ class Conta:
             print("\n### Valor informado invalido ###")
             return False
         
-        return False
+        return True
     
 class ContaCorrente(Conta):
     def __init__(self, numero, cliente, limite=500, limite_saques=3):
