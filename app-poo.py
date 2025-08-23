@@ -55,9 +55,9 @@ class Conta:
     
     def sacar(self, valor):
         saldo = self.saldo
-        exedeu_saldo = valor > saldo
+        excedeu_saldo = valor > saldo
 
-        if exedeu_saldo:
+        if excedeu_saldo:
             print("\n ### você não possui saldo suficiente. ###")
 
         elif valor > 0:
@@ -136,7 +136,7 @@ class Transacao(ABC):
     def valor(self):
         pass
 
-    @property
+    
     @abstractmethod
     def registrar(self, conta):
         pass
